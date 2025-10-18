@@ -29,3 +29,45 @@ A full-featured Job Portal built using **MongoDB**, **Express.js**, **React**, a
 ```bash
 git clone https://github.com/yourusername/job-portal.git
 cd job-portal
+```
+
+### 2. nstall dependencies
+
+```bash
+# Frontend
+cd client
+npm install
+
+# Backend
+cd ../server
+npm install
+```
+
+### 3. Setup environment variables
+Create a .env file inside the server folder and add:
+```bash
+PORT=5000
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_secret_key
+```
+
+### 4. Run the app
+```bash
+# Start backend
+cd server
+npm run dev
+
+# Start frontend
+cd ../client
+npm start
+```
+
+### Project Structure
+
+```bash
+job-portal/
+├── client/          # React frontend
+├── server/          # Express backend
+├── .gitignore
+└── README.md
+```
